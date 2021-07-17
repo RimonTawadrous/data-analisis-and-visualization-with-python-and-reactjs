@@ -1,5 +1,7 @@
 import json
 from flask import Flask, jsonify
+import os
+import sys
 
 annotators_input = {}
 annotation_time_list = []
@@ -155,8 +157,8 @@ def timeDuration(annotation_time_list):
 
 if __name__ == '__main__':
 
-    anonymized_project_file = open('anonymized_project.json',)
-    references_file = open('references.json',)
+    anonymized_project_file = open(os.path.join(sys.path[0], "anonymized_project.json"))
+    references_file = open(os.path.join(sys.path[0], "references.json"))
 
     anonymized_project = json.load(anonymized_project_file)
     references = json.load(references_file)
