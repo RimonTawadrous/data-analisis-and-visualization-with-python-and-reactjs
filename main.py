@@ -231,33 +231,23 @@ if __name__ == '__main__':
     checkAnnotatorsSkills(annotators_input)
     taken_time_segments_dict = timeDuration(annotation_time_list)
 
-    # print("1-a) How many annotators did contribute to the dataset?  ", len(annotators_input))
-    # print("1-b) What are the average, min and max annotation times (durations)?  ", annotationTime(annotation_time_list))
-    # print("1-c) Did all annotators produce the same amount of results, or are there differences? no")
-    # print("1-D) Are there questions for which annotators highly disagree?", len(confused_annotation) ,confused_annotation)
-    # print("2) How often does each occur in the project and do you see a trend within the annotators that made use of these options? ",
-    #  "corrupt_data_num : ", corrupt_data_num, " cant_solve_num : ", cant_solve_num)
-    # print("3) Is the reference set balanced? ", "num of true bikes : ",dataset_true_images_count, "num of false bikes : ", dataset_false_images_count)
-
-    # print("What are the average, min and max annotation times (durations)?  ", annotationTime(annotation_time_list))
-
-    # with open('annotatorsData.json', 'w') as outfile:
-    #     json.dump(annotators_input, outfile)
+    with open('annotatorsData.json', 'w') as outfile:
+        json.dump(annotators_input, outfile)
     
-    # with open('annotationsTimeList.json', 'w') as outfile:
-    #     json.dump(annotation_time_list, outfile)
+    with open('annotationsTimeList.json', 'w') as outfile:
+        json.dump(annotation_time_list, outfile)
 
-    # with open('imagesAnnotations.json', 'w') as outfile:
-    #     json.dump(images_votes, outfile)
+    with open('imagesAnnotations.json', 'w') as outfile:
+        json.dump(images_votes, outfile)
     
-    # with open('imagesWithCantSolve.json', 'w') as outfile:
-    #     json.dump(images_with_cant_solve, outfile)
+    with open('imagesWithCantSolve.json', 'w') as outfile:
+        json.dump(images_with_cant_solve, outfile)
 
-    # with open('imagesWithcorruptData.json', 'w') as outfile:
-    #     json.dump(images_with_Corrupt_data, outfile)
+    with open('imagesWithcorruptData.json', 'w') as outfile:
+        json.dump(images_with_Corrupt_data, outfile)
 
-    # with open('anntotationTakenTimeSegments.json', 'w') as outfile:
-    #     json.dump(taken_time_segments_dict, outfile)
+    with open('anntotationTakenTimeSegments.json', 'w') as outfile:
+        json.dump(taken_time_segments_dict, outfile)
 
 
     anonymized_project_file.close()
