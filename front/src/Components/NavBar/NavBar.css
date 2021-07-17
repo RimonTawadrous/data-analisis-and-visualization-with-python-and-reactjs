@@ -1,0 +1,22 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  
+  }
+  .navbar>* {
+    flex: 1 1 160px;
+  }
+  
+  .navbar__link{
+    text-decoration: none;
+    color: black;
+    padding: 1rem 0;
+    background-color: rgba(237, 237, 237,0.5);
+  }
+  .navbar__link:hover{
+    color: black;
+    background-color: rgba(218, 220, 224,0.7);
+  
+  }
